@@ -1,32 +1,18 @@
 <?php
-$field_name = $_POST['cf_name'];
-$field_email = $_POST['cf_email'];
-$field_message = $_POST['cf_message'];
-
-$mail_to = 'sarathsivan099@gmail.com';
-$subject = 'Message from a site visitor '.$field_name;
-
-$body_message = 'From: '.$field_name."\n";
-$body_message .= 'E-mail: '.$field_email."\n";
-$body_message .= 'Message: '.$field_message;
-
-$headers = 'From: '.$field_email."\r\n";
-$headers .= 'Reply-To: '.$field_email."\r\n";
-
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
-
-if ($mail_status) { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Thank you for the message. We will contact you shortly.');
-		window.location = 'index.html';
-	</script>
-<?php
+//define_syslog_variables
+$name = $_REQUEST['cf_name'];
+$email = $_REQUEST['cf_email'];
+$message = $_REQUEST['cf_message'];
+//check input fields
+if(empty($name) || empty($email) || empty($message))
+{
+  echo "Please fill all the fields";
 }
-else { ?>
-	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to sarathsivan099@gmail.com');
-		window.location = 'index.html';
-	</script>
-<?php
+else{
+  mail("sarathsivan099@gmail.com","Personal Website message",$message,"From:$name <$email>" );
+
+  echo "<script type='text/javascript'>alert('Your message sent successfully');
+  window.history.go(-1);
+  </script>";
 }
 ?>
