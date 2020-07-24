@@ -12,7 +12,7 @@ else{
   mail("sarathsivan099@gmail.com","Personal Website message",$message,"From:$name <$email>" );
 
   echo "<script type='text/javascript'>alert('Your message sent successfully');
-  window.history.go(-1);
+  window.history.log(-1);
   </script>";
 }
 ?>
