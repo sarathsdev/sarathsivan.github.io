@@ -1,6 +1,6 @@
 # sarathsivan
 personal website 
-https://sarathsivan.netlify.app/
+https://sarathsivan.me/
 # screenshot
 ![page1](https://user-images.githubusercontent.com/68682390/88378361-7514d000-cdbe-11ea-9e09-21ba42cd4729.png)
 ![page2](https://user-images.githubusercontent.com/68682390/88378379-7e05a180-cdbe-11ea-910a-4c4b1017ca3c.png)
