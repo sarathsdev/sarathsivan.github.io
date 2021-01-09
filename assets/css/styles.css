@@ -479,7 +479,7 @@ h3 {text-align: center; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color:  #ffff0000;
   height: 10px;
   width: 10px;
   border-radius: 50px;
