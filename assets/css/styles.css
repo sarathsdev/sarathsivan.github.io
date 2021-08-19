@@ -202,7 +202,7 @@ img{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
 }
 .home__img{
     position: absolute;
