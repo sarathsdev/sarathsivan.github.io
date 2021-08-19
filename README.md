@@ -1,4 +1,4 @@
 # sarathsivan
 personal website 
-https://sarathsivan.me/
+https://sarathsivan.github.io/
 
